@@ -1,0 +1,10 @@
+name: deploy-test
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Pretend test deploy of ${GITHUB_SHA}"

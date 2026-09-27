@@ -1,0 +1,8 @@
+name: deploy-prod
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Pretend production deploy of ${GITHUB_SHA}"
